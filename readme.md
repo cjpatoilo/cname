@@ -3,8 +3,8 @@
 > Create a CNAME file from package data.
 
 [![Travis Status](https://travis-ci.org/cjpatoilo/cname.svg?branch=master)](https://travis-ci.org/cjpatoilo/cname?branch=master)
-[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/wabkk000uh6d97xk?svg=true)](https://ci.appveyor.com/project/cjpatoilo/cname)
-[![Codacy Status](https://img.shields.io/codacy/grade/848fb4bd6902434fab0bcfb5461284fe/master.svg)](https://www.codacy.com/app/cjpatoilo/cname/dashboard)
+[![AppVeyor Status](https://ci.appveyor.com/api/projects/status/bl59wj551tbofupk?svg=true)](https://ci.appveyor.com/project/cjpatoilo/cname)
+[![Codacy Status](https://img.shields.io/codacy/grade/04510cf9543142e2bcf340fa84e33371/master.svg)](https://www.codacy.com/app/cjpatoilo/cname/dashboard)
 [![Coverage Status](https://coveralls.io/repos/github/cjpatoilo/cname/badge.svg?branch=master)](https://coveralls.io/github/cjpatoilo/cname?branch=master)
 [![Dependencies Status](https://david-dm.org/cjpatoilo/cname.svg)](https://travis-ci.org/cjpatoilo/cname?branch=master)
 [![Version Status](https://badge.fury.io/js/cname.svg)](https://www.npmjs.com/package/cname)
