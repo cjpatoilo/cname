@@ -14,24 +14,7 @@
 
 ## Why it's awesome?
 
-Install this package npm with --global or with -D to add the package as a dependency in the package.json file of your project. This library reads the package.json files to get the homepage property value, then creates the CNAME file with that value.
-
-**Example**
-
-```json
-// package.json
-{
-	"name": "milligram",
-	"version": "1.0.0",
-	"homepage": "https://milligram.github.io",
-	...
-}
-```
-
-```md
-// CNAME
-milligram.github.io
-```
+Install this package npm with `--global` or with `-D` to add the package as a dependency in the `package.json` file of your project. This library reads the `package.json` files to get the homepage property value, then creates the `CNAME` file with that value.
 
 
 ## Install
@@ -67,6 +50,32 @@ $ cname --help
 
     $ cname dist
 
+```
+
+
+## Example
+
+From package data..
+
+```json
+// package.json
+{
+	"name": "milligram",
+	"version": "1.0.0",
+	"description": "A minimalist CSS framework.",
+	"homepage": "http://milligram.github.io",
+	"repository": "milligram/milligram",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"main": "dist/milligram.css"
+}
+```
+
+..to create CNAME file.
+
+```md
+// CNAME
+milligram.github.io
 ```
 
 
