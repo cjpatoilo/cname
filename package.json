@@ -1,6 +1,6 @@
 {
   "name": "cname",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Create a CNAME file from package data.",
   "homepage": "http://cjpatoilo.com/cname",
   "repository": "cjpatoilo/cname",
@@ -9,7 +9,7 @@
   "bin": "bin/cli.js",
   "files": [
     "bin/cli.js",
-    "src/cname.js"
+    "src/index.js"
   ],
   "keywords": [
     "automation",

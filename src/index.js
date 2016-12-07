@@ -1,7 +1,6 @@
 'use strict'
 
 const fs = require('fs')
-const path = require('path')
 const url = require('url')
 
 function create (argv) {
@@ -20,12 +19,7 @@ function create (argv) {
   const homepage = url.parse(pkg.homepage).host
   const file = `${directory}/CNAME`
 
-  fs.writeFile(file, homepage, error => {
-    if (error) {
-      console.log(`${error}`)
-      process.exit(1)
-    }
-  });
+  fs.writeFileSync(file, homepage)
 }
 
 exports.create = create
