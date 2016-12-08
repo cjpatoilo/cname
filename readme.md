@@ -6,7 +6,7 @@
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/bl59wj551tbofupk?svg=true)](https://ci.appveyor.com/project/cjpatoilo/cname)
 [![Codacy Status](https://img.shields.io/codacy/grade/04510cf9543142e2bcf340fa84e33371/master.svg)](https://www.codacy.com/app/cjpatoilo/cname/dashboard)
 [![Coverage Status](https://coveralls.io/repos/github/cjpatoilo/cname/badge.svg?branch=master)](https://coveralls.io/github/cjpatoilo/cname?branch=master)
-[![Dependencies Status](https://david-dm.org/cjpatoilo/cname.svg)](https://travis-ci.org/cjpatoilo/cname?branch=master)
+[![devDependencies Status](https://david-dm.org/cjpatoilo/cname/dev-status.svg)](https://david-dm.org/cjpatoilo/cname?type=dev)
 [![Version Status](https://badge.fury.io/js/cname.svg)](https://www.npmjs.com/package/cname)
 [![Download Status](https://img.shields.io/npm/dt/cname.svg)](https://www.npmjs.com/package/cname)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/cjpatoilo/cname)
@@ -14,7 +14,7 @@
 
 ## Why it's awesome?
 
-Install this package npm with `--global` or with `-D` to add the package as a dependency in the `package.json` file of your project. This library reads the `package.json` files to get the homepage property value, then creates the `CNAME` file with that value.
+Install this package npm with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project. This lib reads the `package.json` files to get the homepage value, then creates the `CNAME` file with that value.
 
 
 ## Install
