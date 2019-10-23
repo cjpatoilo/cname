@@ -1,45 +1,70 @@
 {
-  "name": "cname",
-  "version": "0.0.2",
-  "description": "Create a CNAME file from package data.",
-  "homepage": "http://cjpatoilo.com/cname",
-  "repository": "cjpatoilo/cname",
-  "license": "MIT",
-  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
-  "bin": "bin/cli.js",
-  "files": [
-    "bin/cli.js",
-    "src/index.js"
-  ],
-  "keywords": [
-    "automation",
-    "cname",
-    "npm",
-    "package.json"
-  ],
-  "ignore": [
-    ".appveyor.yml",
-    ".editorconfig",
-    ".github",
-    ".gitignore",
-    ".travis.yml",
-    "package.json",
-    "src",
-    "test"
-  ],
-  "dependencies": {
-  },
-  "devDependencies": {
-    "ava": "^0.17.0",
-    "coveralls": "^2.11.9",
-    "nyc": "^8.3.0",
-    "standard": "^8.6.0"
-  },
-  "engines": {
-    "node": "^7.0.0"
-  },
-  "scripts": {
-    "test": "standard && nyc ava",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
-  }
+	"name": "cname",
+	"version": "0.0.3",
+	"description": "Create a CNAME file from package data.",
+	"homepage": "https://cjpatoilo.com/cname",
+	"repository": "cjpatoilo/cname",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"private": false,
+	"bin": "cli.js",
+	"main": "index.js",
+	"files": [
+		"cli.js",
+		"index.js"
+	],
+	"keywords": [
+		"🐥",
+		"automation",
+		"cname",
+		"npm",
+		"package.json"
+	],
+	"ignore": [
+		".appveyor.yml",
+		".editorconfig",
+		".github",
+		".gitignore",
+		".travis.yml",
+		"artwork.psd",
+		"package.json",
+		"src",
+		"test"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^2.4.0",
+		"boeing": "latest",
+		"husky": "^3.0.9",
+		"inject-ga": "^0.2.4",
+		"lint-staged": "^9.4.2",
+		"marshmallow": "latest",
+		"nyc": "^14.1.1",
+		"prettier-standard": "^15.0.1",
+		"rimraf": "^3.0.0"
+	},
+	"scripts": {
+		"deploy": "marshmallow -o docs -i artwork.psd -f -m && inject-ga docs/index.html -o docs/index.html -c 'UA-24389952-13' && boeing docs && rimraf docs",
+		"lint": "prettier-standard --check",
+		"test": "nyc ava"
+	},
+	"engines": {
+		"node": "^12.13.0"
+	},
+	"prettier": {
+		"jsxSingleQuote": false,
+		"trailingComma": "all"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"pre-push": "npm run deploy"
+		}
+	},
+	"lint-staged": {
+		"src/**/*": [
+			"prettier-standard --format",
+			"git add"
+		]
+	}
 }

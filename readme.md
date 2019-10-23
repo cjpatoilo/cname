@@ -1,4 +1,4 @@
-# CNAME
+<a href="https://github.com/cjpatoilo/cname"><img width="100%" src="https://cjpatoilo.com/cname/artwork.png" alt="CNAME - Create a CNAME file from package data."></a>
 
 > Create a CNAME file from package data.
 
@@ -12,7 +12,7 @@
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/cjpatoilo/cname)
 
 
-## Why it's awesome?
+## Why it's awesome
 
 Install this package npm with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project. This lib reads the `package.json` files to get the homepage value, then creates the `CNAME` file with that value.
 
@@ -37,18 +37,18 @@ $ yarn install cname --global
 ```
 $ cname --help
 
-  Usage:
+	Usage:
 
-    $ cname <directory> [<options>]
+		$ cname <directory> [<options>]
 
-  Options:
+	Options:
 
-    -h, --help              Display help information
-    -v, --version           Output version
+		-h, --help              Display help information
+		-v, --version           Output version
 
-  Examples:
+	Examples:
 
-    $ cname dist
+		$ cname dist
 
 ```
 
@@ -63,7 +63,7 @@ From package data..
 	"name": "milligram",
 	"version": "1.0.0",
 	"description": "A minimalist CSS framework.",
-	"homepage": "http://milligram.github.io",
+	"homepage": "https://milligram.io",
 	"repository": "milligram/milligram",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
@@ -81,9 +81,9 @@ milligram.github.io
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/cname/blob/master/.github/contributing.md).
+Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/cname#contributing).
 
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](http://cjpatoilo.com). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://github.com/cjpatoilo/cname#license).
