@@ -1,6 +1,6 @@
 {
 	"name": "cname",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Create a CNAME file from package data.",
 	"homepage": "https://cjpatoilo.com/cname",
 	"repository": "cjpatoilo/cname",
