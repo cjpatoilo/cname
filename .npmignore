@@ -1,0 +1,11 @@
+.appveyor.yml
+.git
+.github
+.gitignore
+.prettierignore
+.travis.yml
+artwork.psd
+node_modules
+package-lock.json
+package.json
+test.js
