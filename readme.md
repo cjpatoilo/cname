@@ -11,11 +11,9 @@
 [![Download Status](https://img.shields.io/npm/dt/cname.svg)](https://www.npmjs.com/package/cname)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/cjpatoilo/cname)
 
-
 ## Why it's awesome
 
 Install this package npm with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project. This lib reads the `package.json` files to get the homepage value, then creates the `CNAME` file with that value.
-
 
 ## Install
 
@@ -31,27 +29,25 @@ $ npm install cname --global
 $ yarn install cname --global
 ```
 
-
 ## Usage
 
 ```
 $ cname --help
 
-	Usage:
+  Usage:
 
-		$ cname <directory> [<options>]
+    $ cname <directory> [<options>]
 
-	Options:
+  Options:
 
-		-h, --help              Display help information
-		-v, --version           Output version
+    -h, --help              Display help information
+    -v, --version           Output version
 
-	Examples:
+  Examples:
 
-		$ cname dist
+    $ cname dist
 
 ```
-
 
 ## Example
 
@@ -60,14 +56,14 @@ From package data..
 ```json
 // package.json
 {
-	"name": "milligram",
-	"version": "1.0.0",
-	"description": "A minimalist CSS framework.",
-	"homepage": "https://milligram.io",
-	"repository": "milligram/milligram",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"main": "dist/milligram.css"
+  "name": "milligram",
+  "version": "1.5.0",
+  "description": "A minimalist CSS framework.",
+  "homepage": "https://milligram.io",
+  "repository": "milligram/milligram",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "main": "dist/milligram.css"
 }
 ```
 
@@ -75,15 +71,13 @@ From package data..
 
 ```md
 // CNAME
-milligram.github.io
+milligram.io
 ```
-
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/cname#contributing).
-
+Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/cname/contribute).
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://github.com/cjpatoilo/cname#license).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://cjpatoilo.com/license).
