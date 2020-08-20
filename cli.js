@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const cli = require('../src/index')
-const pkg = require('../package.json')
+const cli = require('./index')
+const pkg = require('./package.json')
 const argv = process.argv.slice(2)
 
 if (argv.indexOf('--version') !== -1 || argv.indexOf('-v') !== -1) {
