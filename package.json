@@ -28,14 +28,13 @@
     "inject-ga": "^0.2.4",
     "lint-staged": "^10.2.11",
     "marshmallow": "latest",
-    "nyc": "^15.1.0",
     "prettier-standard": "^16.3.0",
     "rimraf": "^3.0.2"
   },
   "scripts": {
     "deploy": "marshmallow -o docs -i artwork.psd -f -m && inject-ga docs/index.html -o docs/index.html -c 'UA-24389952-13' && boeing docs && rimraf docs",
     "lint": "prettier-standard --check",
-    "test": "nyc ava"
+    "test": "ava"
   },
   "engines": {
     "node": "^12.18.0",
