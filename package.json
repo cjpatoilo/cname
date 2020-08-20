@@ -1,6 +1,6 @@
 {
   "name": "cname",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create a CNAME file from package data.",
   "homepage": "https://cjpatoilo.com/cname",
   "repository": "cjpatoilo/cname",
@@ -22,13 +22,13 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "ava": "^3.9.0",
+    "ava": "^3.11.1",
     "boeing": "latest",
     "husky": "^4.2.5",
     "inject-ga": "^0.2.4",
     "lint-staged": "^10.2.11",
     "marshmallow": "latest",
-    "prettier-standard": "^16.3.0",
+    "prettier-standard": "^16.4.1",
     "rimraf": "^3.0.2"
   },
   "scripts": {
